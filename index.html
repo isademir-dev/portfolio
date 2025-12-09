@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsa Demir | Security Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        matrix: '#00ff41',
+                        darkbg: '#0d1117',
+                        cardbg: '#161b22',
+                        border: '#30363d'
+                    },
+                    fontFamily: {
+                        mono: ['Courier New', 'Courier', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', sans-serif; }
+        .matrix-text { text-shadow: 0 0 5px #00ff41; }
+        .project-card:hover { transform: translateY(-5px); border-color: #00ff41; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="container mx-auto px-6 py-20 text-center">
+        <h1 class="text-6xl font-bold text-white mb-4 matrix-text">İSA DEMİR</h1>
+        <p class="text-xl text-gray-400 font-mono">> Cybersecurity Student & Tool Developer_</p>
+        
+        <div class="mt-8 flex justify-center gap-4">
+            <a href="https://github.com/isademir-dev" target="_blank" class="px-6 py-2 border border-gray-600 rounded hover:bg-white hover:text-black transition">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/isa-demir-a9a52b315/" target="_blank" class="px-6 py-2 border border-blue-600 text-blue-400 rounded hover:bg-blue-600 hover:text-white transition">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-10 flex-grow">
+        <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4">
+            <i class="fas fa-code text-matrix mr-2"></i> Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
+                <div class="flex justify-between mb-4">
+                    <i class="fas fa-shield-alt text-4xl text-matrix"></i>
+                    <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-matrix">v6.2</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">ShadowObfuscate</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Advanced polymorphic code locking system. Protects Python source code by executing it directly in memory.
+                </p>
+                <a href="https://github.com/isademir-dev/ShadowObfuscate-CodeLocker" class="text-matrix hover:underline">View Source -></a>
+            </div>
+
+            <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
+                <div class="flex justify-between mb-4">
+                    <i class="fas fa-lock text-4xl text-red-500"></i>
+                    <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-red-400">Ransomware Logic</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">ShadowCrypt</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Universal file encryption tool. Uses stream ciphers to lock recursive directories with a master key system.
+                </p>
+                <a href="https://github.com/isademir-dev/ShadowCrypt-FileLocker" class="text-red-400 hover:underline">View Source -></a>
+            </div>
+
+            <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
+                <div class="flex justify-between mb-4">
+                    <i class="fas fa-hat-wizard text-4xl text-purple-500"></i>
+                    <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-purple-400">FiveM / Lua</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">Wizardry Server</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Complex Hogwarts-themed Roleplay server. Features custom Lua spell mechanics and SQL integrations.
+                </p>
+                <span class="text-gray-500 cursor-not-allowed">Private Source <i class="fas fa-lock ml-1"></i></span>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-800 py-6 text-center text-gray-600 text-sm">
+        &copy; 2025 İsa Demir. Built for security.
+    </footer>
+</body>
+</html>
