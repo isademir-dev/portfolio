@@ -27,68 +27,178 @@
         body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', sans-serif; }
         .matrix-text { text-shadow: 0 0 5px #00ff41; }
         .project-card:hover { transform: translateY(-5px); border-color: #00ff41; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2); }
+        .skill-tag { border: 1px solid #30363d; transition: 0.3s; }
+        .skill-tag:hover { border-color: #00ff41; color: #00ff41; background: rgba(0, 255, 65, 0.05); }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <header class="container mx-auto px-6 py-20 text-center">
+    <header class="container mx-auto px-6 py-16 text-center">
         <h1 class="text-6xl font-bold text-white mb-4 matrix-text">İSA DEMİR</h1>
         <p class="text-xl text-gray-400 font-mono">> Cybersecurity Student & Tool Developer_</p>
         
-        <div class="mt-8 flex justify-center gap-4">
-            <a href="https://github.com/isademir-dev" target="_blank" class="px-6 py-2 border border-gray-600 rounded hover:bg-white hover:text-black transition">
+        <div class="mt-8 flex justify-center gap-4 flex-wrap">
+            <a href="https://github.com/isademir-dev" target="_blank" class="px-6 py-2 border border-gray-600 rounded hover:bg-white hover:text-black transition flex items-center gap-2">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/isa-demir-a9a52b315/" target="_blank" class="px-6 py-2 border border-blue-600 text-blue-400 rounded hover:bg-blue-600 hover:text-white transition">
+            <a href="https://www.linkedin.com/in/isa-demir-a9a52b315/" target="_blank" class="px-6 py-2 border border-blue-600 text-blue-400 rounded hover:bg-blue-600 hover:text-white transition flex items-center gap-2">
                 <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="cv.pdf" download class="px-6 py-2 border border-matrix text-matrix rounded hover:bg-matrix hover:text-black transition flex items-center gap-2">
+                <i class="fas fa-file-download"></i> Download CV
             </a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-10 flex-grow">
-        <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4">
-            <i class="fas fa-code text-matrix mr-2"></i> Projects
-        </h2>
+    <main class="container mx-auto px-6 py-6 flex-grow max-w-6xl">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
-                <div class="flex justify-between mb-4">
-                    <i class="fas fa-shield-alt text-4xl text-matrix"></i>
-                    <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-matrix">v6.2</span>
-                </div>
-                <h3 class="text-2xl font-bold text-white mb-2">ShadowObfuscate</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Advanced polymorphic code locking system. Protects Python source code by executing it directly in memory.
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                <i class="fas fa-user-secret text-matrix mr-2"></i> About Me
+            </h2>
+            <div class="bg-cardbg border border-border p-6 rounded-lg text-gray-300 font-mono leading-relaxed">
+                <p class="mb-4">
+                    <span class="text-matrix">></span> I am a Information Security Technology student at Beykoz University, combining a lifelong passion for computers with academic discipline.
                 </p>
-                <a href="https://github.com/isademir-dev/ShadowObfuscate-CodeLocker" class="text-matrix hover:underline">View Source -></a>
-            </div>
-
-            <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
-                <div class="flex justify-between mb-4">
-                    <i class="fas fa-lock text-4xl text-red-500"></i>
-                    <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-red-400">Ransomware Logic</span>
-                </div>
-                <h3 class="text-2xl font-bold text-white mb-2">ShadowCrypt</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Universal file encryption tool. Uses stream ciphers to lock recursive directories with a master key system.
+                <p class="mb-4">
+                    <span class="text-matrix">></span> I specialize in developing projects that integrate software architecture with cybersecurity principles. My expertise includes Python, C#, and Web Technologies, with practical experience in secure code development (Obfuscation) and server architecture.
                 </p>
-                <a href="https://github.com/isademir-dev/ShadowCrypt-FileLocker" class="text-red-400 hover:underline">View Source -></a>
-            </div>
-
-            <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
-                <div class="flex justify-between mb-4">
-                    <i class="fas fa-crosshairs text-4xl text-red-500"></i>
-                    <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-red-400">Network Intelligence</span>
-                </div>
-                <h3 class="text-2xl font-bold text-white mb-2">NetProbe v20.0</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Elite Network Reconnaissance & Forensics tool. Features active LAN scanning with offline MAC DB, HTTP visit logging, and smart credential sniffing.
+                <p>
+                    <span class="text-matrix">></span> Open to learning, following the latest tech trends, and ready to contribute as a team player.
                 </p>
-                <a href="https://github.com/isademir-dev/NetProbe-Ultimate" target="_blank" class="text-red-400 hover:underline">View Source -></a>
             </div>
+        </section>
 
-        </div>
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                <i class="fas fa-microchip text-matrix mr-2"></i> Technical Arsenal
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Python</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">C#</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">C/C++</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Lua</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Java</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Kotlin</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">PHP</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">Web & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">HTML5 & CSS3</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">ASP.NET Core</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Next.js</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Git</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">Linux</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">MySQL</span>
+                        <span class="skill-tag px-3 py-1 rounded bg-cardbg text-sm">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                <i class="fas fa-briefcase text-matrix mr-2"></i> Experience
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-cardbg border-l-4 border-matrix p-6 rounded-r-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white">Prodea Group</h3>
+                        <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-gray-400">2024</span>
+                    </div>
+                    <p class="text-gray-400 mb-2 font-mono">Intern</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                        <li>Managed Network & IT support processes.</li>
+                        <li>Implemented security patches and system updates.</li>
+                        <li>Ensured digital system maintenance and team coordination.</li>
+                    </ul>
+                </div>
+                <div class="bg-cardbg border-l-4 border-gray-600 p-6 rounded-r-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white">Seyhan Bilgisayar</h3>
+                        <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-gray-400">2024</span>
+                    </div>
+                    <p class="text-gray-400 mb-2 font-mono">Intern</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                        <li>Hardware troubleshooting and repair.</li>
+                        <li>System optimization and data backup operations.</li>
+                        <li>Customer technical support.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-2">
+                <i class="fas fa-graduation-cap text-matrix mr-2"></i> Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-cardbg border border-border p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-white">Beykoz University</h3>
+                    <p class="text-matrix text-sm mb-2">Information Security Technology</p>
+                    <p class="text-gray-500 text-xs">2024 - 2026 (Associate Degree)</p>
+                    <p class="text-gray-400 text-sm mt-3">Focus: Network Security, Cryptography, Secure Software Development, Penetration Testing.</p>
+                </div>
+                <div class="bg-cardbg border border-border p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-white">Çavuşbaşı Voc. & Tech. High School</h3>
+                    <p class="text-gray-400 text-sm mb-2">Software Engineering Field</p>
+                    <p class="text-gray-500 text-xs">2020 - 2024</p>
+                    <p class="text-gray-400 text-sm mt-3">Focus: Web Design, Database Management, Algorithms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4">
+                <i class="fas fa-code text-matrix mr-2"></i> Featured Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-shield-alt text-4xl text-matrix"></i>
+                        <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-matrix">v6.2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">ShadowObfuscate</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Advanced polymorphic code locking system. Protects Python source code by executing it directly in memory.
+                    </p>
+                    <a href="https://github.com/isademir-dev/ShadowObfuscate-CodeLocker" class="text-matrix hover:underline">View Source -></a>
+                </div>
+
+                <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-lock text-4xl text-red-500"></i>
+                        <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-red-400">Ransomware Logic</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">ShadowCrypt</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Universal file encryption tool. Uses stream ciphers to lock recursive directories with a master key system.
+                    </p>
+                    <a href="https://github.com/isademir-dev/ShadowCrypt-FileLocker" class="text-red-400 hover:underline">View Source -></a>
+                </div>
+
+                <div class="project-card bg-cardbg border border-border p-6 rounded-lg transition duration-300">
+                    <div class="flex justify-between mb-4">
+                        <i class="fas fa-crosshairs text-4xl text-red-500"></i>
+                        <span class="text-xs font-mono bg-gray-800 px-2 py-1 rounded text-red-400">Network Intelligence</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">NetProbe v20.0</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Elite Network Reconnaissance & Forensics tool. Features active LAN scanning with offline MAC DB, HTTP visit logging, and smart credential sniffing.
+                    </p>
+                    <a href="https://github.com/isademir-dev/NetProbe-Ultimate" target="_blank" class="text-red-400 hover:underline">View Source -></a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer class="border-t border-gray-800 py-6 text-center text-gray-600 text-sm">
